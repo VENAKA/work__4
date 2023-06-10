@@ -1,0 +1,130 @@
+body{
+    background-color: black;
+}
+.header{
+    max-width: 1350px;
+    margin: 60px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__logo{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: -2px;
+        text-transform: uppercase;
+        color: #FAFAF9;
+    }
+    &__nav-link{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        color: #FAFAF9;
+        text-decoration: none;
+        margin: 20px;
+    }
+}
+.main{
+    max-width: 890px;
+    height: 800px;
+    animation: main 1s linear;
+    &__H{
+        width: 883px;
+        height: 340px;
+        font-family: 'SF Pro Display';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 172px;
+        line-height: 170px;
+        letter-spacing: -2px;
+        text-transform: uppercase;
+        color: #FAFAF9;
+        margin: 0 0 45px 0;
+    }
+    &__text{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+        color: rgba(239, 237, 232, 0.65);
+        width: 560px;
+        height: 48px;
+        margin: 0 0 50px 0;
+    }
+    &__button{
+        width: 200px;
+        height: 70px;
+        background: #E6533C;
+        border-radius: 10px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 1px;
+        color: #FFFFFF;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0 0 112px 0;
+        animation: button 2s linear;
+        cursor: pointer;
+    }
+    &__text-2{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 1px;
+        color: rgba(239, 237, 232, 0.65);
+        margin: 0 0 33px 0;
+    }
+}
+@keyframes button{
+    0%{
+        transform: translateX(-2000px);
+    }
+}
+@keyframes main{
+    0%{
+        transform: translateX(-1000px);
+    }
+}
+.div{
+    max-width:1350px ;
+    height: 800px;
+    position: relative;
+    margin:180px 0  0 120px;
+    &__img-1{
+        position: absolute;
+        right:450px ;
+        top: 420px;
+        z-index: 2;
+    }
+    &__img-2{
+        position: absolute;
+        top: 520px;
+        right: 0px;
+    }
+    &__img-3{
+        position: absolute;
+        top: 50px;
+        right: 100px;
+    }
+    &__img-4{
+        position: absolute;
+        top: 90px;
+        right: 140px;
+        z-index: 1;
+    }
+}
