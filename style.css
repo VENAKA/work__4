@@ -114,20 +114,38 @@ body {
   right: 450px;
   top: 420px;
   z-index: 2;
+  animation: img_1 3s linear;
 }
 .div__img-2 {
   position: absolute;
   top: 520px;
   right: 0px;
+  animation: img_1 4s linear;
 }
 .div__img-3 {
   position: absolute;
   top: 50px;
   right: 100px;
+  animation: img_1 5s linear;
 }
 .div__img-4 {
   position: absolute;
   top: 90px;
   right: 140px;
   z-index: 1;
+  animation: img_2 1s linear;
+}
+
+@keyframes img_2 {
+  0% {
+    transform: translateX(1000px);
+  }
+}
+@keyframes img_1 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }/*# sourceMappingURL=style.css.map */
