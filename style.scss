@@ -1,5 +1,6 @@
 body{
     background-color: black;
+    
 }
 .header{
     max-width: 1350px;
@@ -104,7 +105,9 @@ body{
     max-width:1350px ;
     height: 800px;
     position: relative;
-    margin:180px 0  0 120px;
+    margin:120px auto;
+    overflow: hidden;
+    position: relative;
     &__img-1{
         position: absolute;
         right:450px ;
@@ -144,4 +147,27 @@ body{
     100%{
         opacity: 1;
     }
+}
+.main__checkbox[type="checkbox"]:checked ~ .video__con {
+    display: block;
+}
+.video__con{
+    width:800px ;
+    height: 700px;
+    display: none;
+    position: absolute;
+    top:0;
+    right: 0;
+    z-index: 100;
+    background-color: rgb(25, 24, 24);
+    border: 1px solid #ffffff;
+    animation: con 1s linear;
+}
+@keyframes con{
+    0%{
+        transform: translateY(-1000px);
+    }
+}
+.main__checkbox{
+    display: none;
 }
